@@ -25,7 +25,7 @@ def find_structural_variant(bam_file, chrom, start, end):
 
     if not found_mutation:
         # Fallback: Check for a sudden drop in mean coverage
-        print("⚠️ No explicit CIGAR deletion found. Checking for coverage gaps...")
+        print(" No explicit CIGAR deletion found. Checking for coverage gaps...")
         coverage = samfile.count_coverage(chrom, start, end)
         total_cov = [sum(base) for base in zip(*coverage)]
         
