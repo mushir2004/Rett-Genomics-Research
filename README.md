@@ -70,7 +70,6 @@ Rett-Genomics-Research/
 ├── advanced_metrics.py         # Generates coverage heatmaps and stats
 ├── detect_deletion.py          # Heuristic logic for variant hunting
 ├── hunt_mutations.py           # Core mutation and read simulation script
-├── realistic_qc_metrics.py     # FastQC-style data modeling
 ├── run_alignment.sh            # Bash automation for BWA and SAMtools
 └── README.md                   # Project documentation
 
