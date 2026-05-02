@@ -179,3 +179,34 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+
+# --- Genomic Data ---
+# Ignore the massive human reference and index files
+data/reference/
+
+# Ignore simulated patient sequences (we can regenerate these with hunt_mutations.py)
+data/patient/*.fa
+data/patient/*.fasta
+
+# --- Alignment Results ---
+# These are binary files that change every run and shouldn't be on GitHub
+results/*.sam
+results/*.bam
+results/*.bai
+
+# --- Python & Environment ---
+# Local virtual environments
+.venv/
+venv/
+venv_linux/
+rett_linux_env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# --- OS & IDE Files ---
+.DS_Store
+.vscode/
+.idea/
