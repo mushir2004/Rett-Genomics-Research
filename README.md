@@ -94,7 +94,6 @@ How to Run the Pipeline
                     python3 detect_deletion.py
 
             # 4. Generate QC metrics and final figures
-                    python3 realistic_qc_metrics.py
                     python3 advanced_metrics.py
 
 Results will populate in the results/ and results/figures/ directories.
