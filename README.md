@@ -42,7 +42,7 @@ The project is broken down into four highly automated phases:
 3. **Variant Detection (`detect_deletion.py`)**
    * Scans the aligned `.bam` file.
    * Uses a heuristic sliding-window approach to identify regions where read coverage drops to absolute zero, confirming the deletion coordinates.
-4. **Quality Control & Visualization (`realistic_qc_metrics.py` & `advanced_metrics.py`)**
+4. **Quality Control & Visualization (`advanced_metrics.py`)**
    * Generates publication-ready figures modeling wet-lab NGS noise, adapter trimming, and overall genomic coverage.
 
 ---
@@ -98,3 +98,4 @@ How to Run the Pipeline
                     python3 advanced_metrics.py
 
 Results will populate in the results/ and results/figures/ directories.
+```
